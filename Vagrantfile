@@ -26,16 +26,9 @@ Vagrant.configure("2") do |config|
     vb.customize ["modifyvm", :id, "--memory", vdd_config["memory"]]
 
     # Synced Folder
-    if vdd_config["synced_folder"]["use_nfs"]
-      config.vm.synced_folder vdd_config["synced_folder"]["host_path"],
-      vdd_config["synced_folder"]["guest_path"],
-      :nfs => true
-    else
-      config.vm.synced_folder vdd_config["synced_folder"]["host_path"],
-      vdd_config["synced_folder"]["guest_path"],
-      :owner => "www-data",
-      :group => "vagrant"
-    end
+    config.vm.synced_folder vdd_config["synced_folder"]["host_path"],
+    vdd_config["synced_folder"]["guest_path"],
+    type: "rsync"
 
 =begin
  This is for vassh and vasshin to work properly (let this line commented and indented the way it is)

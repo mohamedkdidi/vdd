@@ -4,8 +4,7 @@
   "memory": "1024",
   "synced_folder": {
     "host_path": "www/",
-    "guest_path": "/var/www",
-    "use_nfs": true
+    "guest_path": "/var/www"
   },
   "php": {
     "version": false

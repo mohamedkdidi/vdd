@@ -70,25 +70,6 @@ your environment.
      Vagrant will start to build your environment. You'll see green status
      messages while Chef is configuring the system.
 
-     If during `vagrant up` you encountered the below message, that means you don't have NFS. Also, take note that if        you're on Windows, NFS isn't supported.
-
-     ```
-     Bringing machine 'default' up with 'virtualbox' provider...
-     There are errors in the configuration of this machine. Please fix
-     the following errors and try again:
-
-     vm:
-     * It appears your machine doesn't support NFS, or there is not an
-     adapter to enable NFS on this machine for Vagrant. Please verify
-     that 'nfsd' is installed on your machine, and try again. If you're
-     on Windows, NFS isn't supported. If the problem persists, please
-     contact Vagrant support.
-     ```
-
-     In Debian/Ubuntu, you can install the required package using this command.
-
-     `$ sudo apt-get install nfs-common nfs-kernel-server`
-
   1. Visit `192.168.44.44` address OR the hostname specified in the config.json
      If you didn't change the default IP address in `config.json` file you'll see
      VDD's main page. Main page has links to configured sites, development tools
@@ -221,12 +202,6 @@ valid. http://jsonlint.com/ can help to check it.
       * `guest_path (string, required)`
         _Must be an absolute path of where to share the folder within the guest
         machine._
-
-      * `use_nfs (boolean, required)`
-        _In some cases the default shared folder implementations (such as
-        VirtualBox shared folders) have high performance penalties. If you're
-        seeing less than ideal performance with synced folders, NFS can offer a
-        solution. http://docs.vagrantup.com/v2/synced-folders/nfs._
 
   * `php (object of strings, required)`
     _PHP configuration._
