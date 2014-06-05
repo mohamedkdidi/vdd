@@ -123,7 +123,6 @@ Drush Integration
 If your `Host` machine has Drush already you can use it to manage your VDD environment. All you need to do is create a file called `vdd.aliases.drushrc.php` in `~/.drush` in your host machine. The file should contain the below script.
 
 ```
-<?php
 $aliases['vdd'] = array(
   'parent' => '@parent',
   'site' => 'vdd',
@@ -236,7 +235,7 @@ valid. http://jsonlint.com/ can help to check it.
             _Drupal administrator email._
 
           * `site_name (string, required)`
-            _rupal site name._
+            _Drupal site name._
 
           * `site_mail (string, required)`
             _Drupal site email._
@@ -252,7 +251,3 @@ valid. http://jsonlint.com/ can help to check it.
 
   * `custom_roles (array, required)`
     _List of custom roles. Key is required, but can be empty array ([])._
-
-If you find a problem, incorrect comment, obsolete or improper code or such,
-please let us know by creating a new issue at
-http://drupal.org/project/issues/vdd

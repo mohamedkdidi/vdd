@@ -11,8 +11,8 @@ Vagrant.configure("2") do |config|
   config.ssh.forward_agent = true
 
   # Base box
-  config.vm.box = "precise32"
-  config.vm.box_url = "http://files.vagrantup.com/precise32.box"
+  config.vm.box = "hashicorp/precise64"
+  config.vm.box_version = "= 1.0.0"
 
   # Machine hostname
   config.vm.hostname = vdd_config["hostname"]
@@ -42,7 +42,7 @@ Vagrant.configure("2") do |config|
     # Synced Folder
     config.vm.synced_folder vdd_config["synced_folder"]["host_path"],
     vdd_config["synced_folder"]["guest_path"],
-    type: vdd_config["synced_folder"]["type"].present? vdd_config["synced_folder"]["type"] : "rsync"
+    type: vdd_config["synced_folder"]["type"]
 
 =begin
  This is for vassh and vasshin to work properly (let this line commented and indented the way it is)
