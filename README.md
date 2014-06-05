@@ -1,26 +1,26 @@
 Vagrant Drupal Development
 ==========================
 
-Vagrant Drupal Development (VDD) is fully configured and ready to use
-development environment built on Linux (Ubuntu 12) with Vagrant, VirbualBox and
-Chef Solo provisioner. VDD is virtualized environment, so your base system will
+Vagrant Drupal Development (VDD) is a fully configured and ready to use
+development environment built on Linux (Ubuntu 12) with Vagrant, VirtualBox and
+Chef Solo provisioner. VDD is a virtualized environment, so your base system will
 not be changed and remain clean after installation. You can create and delete as
-much environments as you wish without any consequences.
+many environments as you wish without any consequences.
 
 Note: VDD works great with 6, 7 and 8 versions of Drupal.
 
-The main goal of the project is to provide easy to use fully functional and
+The main goal of the project is to provide an easy to use fully functional and
 highly customizable Linux based environment for Drupal development.
 
 Setup is very simple, fast and can be performed on Windows, Linux or Mac
-platforms. It's simple to clone ready environment to your Laptop or home
+platforms. It's simple to clone an existing environment to your Laptop or home
 computer and then keep it synchronized.
 
-If you don't familiar with Vagrant, please read about it. Documentation is very
+If you are not familiar with Vagrant, please read about it. Documentation is very
 simple to read and understand. http://docs.vagrantup.com/v2/
 
-To start VDD you don't need to write your Vagrantfile. All configurations can be
-done inside simple JSON configuration file.
+To start VDD you don't need to write your Vagrantfile. All configuration can be
+done a inside simple JSON configuration file.
 
 
 Out of the box features
