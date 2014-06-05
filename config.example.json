@@ -1,10 +1,10 @@
 {
   "hostname" : "vdd",
   "ip": "192.168.44.44",
-  "memory": "1024",
   "synced_folder": {
     "host_path": "www/",
-    "guest_path": "/var/www"
+    "guest_path": "/var/www",
+    "type": "nfs"
   },
   "php": {
     "version": false
