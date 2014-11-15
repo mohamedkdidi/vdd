@@ -42,7 +42,7 @@ Vagrant.configure("2") do |config|
     # Synced Folder
     config.vm.synced_folder vdd_config["synced_folder"]["host_path"],
     vdd_config["synced_folder"]["guest_path"],
-    type: vdd_config["synced_folder"]["type"].present? vdd_config["synced_folder"]["type"] : "rsync"
+    type: vdd_config["synced_folder"]["type"] ? vdd_config["synced_folder"]["type"] : "rsync"
 
 =begin
  This is for vassh and vasshin to work properly (let this line commented and indented the way it is)
