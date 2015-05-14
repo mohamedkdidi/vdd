@@ -161,7 +161,7 @@ Templates override
 
 If you want to change some configuration files, for example, php.ini you should
 override default VDD's template. All templates a located in
-`cookbooks/vdd/vdd/templates/default`
+`cookbooks/core/vdd/templates/default`
 
 All you need is to copy template file into `cookbooks/core/vdd/templates/ubuntu`
 directory and edit it.
