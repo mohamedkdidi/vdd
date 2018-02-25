@@ -256,3 +256,6 @@ valid. http://jsonlint.com/ can help to check it.
 If you find a problem, incorrect comment, obsolete or improper code or such,
 please let us know by creating a new issue at
 http://drupal.org/project/issues/vdd
+
+Maintained by the [developers at x-team](https://www.x-team.com) | [developer blog](https://www.x-team.com/blog/)
+
